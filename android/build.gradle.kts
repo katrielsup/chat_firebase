@@ -1,3 +1,15 @@
+// build.gradle.kts na raiz
+buildscript {
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.0")
+        // outros classpaths aqui
+    }
+}
+
+plugins{
+    id("com.google.gms.google-services") version "4.4.2" apply false
+}
+
 allprojects {
     repositories {
         google()
